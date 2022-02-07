@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Escolar</title>
+</head>
+<body>
+  <style>
+   body {
+     background-color: darkslategrey;
+     color: floralwhite;
+     font: normal 20pt Arial;
+   }
+
+   h1 {
+    color: goldenrod;
+
+   }
+
+   p {
+     color: gray;
+   }
+  </style>
+
+  <h1>Resultado Final da Nota Escolar</h1>
+  <p>Bem vindo aluno, boa sorte em sua nota final!</p>
+
+    <script>
+
+        window.alert('Bem Vindo a sua Escola')
+        var nome = window.prompt('Qual é o seu nome?')
+        var nota1 = Number(window.prompt('Qual é sua primeira nota?'))
+        var nota2 = Number(window.prompt('Qual é sua segunda nota?'))
+        var mediaescola = Number(window.prompt('Qual é a sua média escolar?'))
+        var mediaprova = (nota1 + nota2) / 2
+        var res = mediaprova >= mediaescola ? 'Aprovado' : 'Reprovado'
+
+        if(res == 'Aprovado'){
+          document.write(`Parabéns ${nome}! você foi ${res} com média ${mediaprova}`)
+        }
+
+        else if(res == 'Reprovado'){
+          document.write(`Olá ${nome}, infelizmente você foi ${res} com média ${mediaprova}`)
+
+        }
+        </script>
+    
+</body>
+</html>
